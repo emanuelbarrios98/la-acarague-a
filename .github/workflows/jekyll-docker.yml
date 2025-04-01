@@ -1,0 +1,24 @@
+            nombre: Configuración del entorno Node.js
+  usos: acciones/setup-node@v4.3.0
+  con:
+    # Establecer siempre-auth en npmrc.
+    siempre-auth: # opcional, el valor predeterminado es falso
+    # Especificación de versión de la versión a utilizar. Ejemplos: 12.x, 10.15.1, >=10.15.0.
+    versión de nodo: # opcional
+    # Archivo que contiene la versión Especificación de la versión a utilizar.  Ejemplos: package.json, .nvmrc, .node-version, .tool-versions.
+    nodo-versión-archivo: # opcional
+    # Arquitectura de destino para que Node la use. Ejemplos: x86, x64. Utilizará la arquitectura del sistema de forma predeterminada.
+    arquitectura: #opcional
+    # Establezca esta opción si desea que la acción compruebe la última versión disponible que satisfaga las especificaciones de la versión.
+    check-último: # opcional
+    # Registro opcional para configurar para auth. Establecerá el registro en un archivo .npmrc y .yarnrc de nivel de proyecto, y configurará auth para leer desde env.NODE_AUTH_TOKEN.
+    registry-url: #opcional
+    # Alcance opcional para autenticarse contra registros seleccionados. Volverá al propietario del repositorio cuando use el registro de paquetes de GitHub (https://npm.pkg.github.com/).
+    alcance: #opcional
+    # Se usa para extraer distribuciones de nodos de versiones de nodos. Como hay un valor predeterminado, esto generalmente no es suministrado por el usuario. Al ejecutar esta acción en github.com, el valor predeterminado es suficiente. Cuando se ejecuta en GHES, puede pasar un token de acceso personal para github.com si está experimentando una limitación de velocidad.
+    token: # opcional, default is ${{ github.server_url == 'https://github.com' && github.token || '' }}
+    # Se utiliza para especificar un administrador de paquetes para el almacenamiento en caché en el directorio predeterminado. Valores soportados: npm, hilo, pnpm.
+    caché: #opcional
+    # Se utiliza para especificar la ruta a un archivo de dependencia: package-lock.json, yarn.lock, etc. Admite comodines o una lista de nombres de archivos para almacenar en caché múltiples dependencias.
+    caché-dependencia-ruta: # opcional
+          
