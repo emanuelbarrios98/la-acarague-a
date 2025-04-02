@@ -12,8 +12,8 @@
 
 name: SLSA generic generator
 on:
-  workflow_dispatch:
-  release:
+  workflow_dispatch:README.md
+  release:README.md
     types: [created]
 
 jobs:
