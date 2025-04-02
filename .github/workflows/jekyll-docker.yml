@@ -1,5 +1,5 @@
             nombre: Configuración del entorno Node.js
-  usos: acciones/setup-node@v4.3.0
+  usos:acciones/setup-node@v4.3.0
   con:
     # Establecer siempre-auth en npmrc.
     siempre-auth: # opcional, el valor predeterminado es falso
